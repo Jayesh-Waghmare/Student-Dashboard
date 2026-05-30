@@ -9,6 +9,8 @@ import type { Course } from "@/types"
 
 import { getCourses } from "@/lib/data"
 
+export const dynamic = "force-dynamic"
+
 async function CourseList() {
   const courses = await getCourses()
   return (

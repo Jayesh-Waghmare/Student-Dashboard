@@ -4,6 +4,8 @@ import { CoursesListClient } from "./CoursesListClient"
 import type { Course } from "@/types"
 import { fallbackCourses } from "@/lib/data"
 
+export const dynamic = "force-dynamic"
+
 async function getCourses() {
   try {
     const url = process.env.NEXT_PUBLIC_SUPABASE_URL
